@@ -1,5 +1,4 @@
 # 🔁 **Perception in Reflection**  
-### 🧠 Self-Correcting Visual Reasoners via Token-Level Feedback
 
 <!-- <p align="center">
   <img src="static/images/Fig1.png" alt="RePer Teaser" width="70%">
