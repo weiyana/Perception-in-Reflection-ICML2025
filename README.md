@@ -1,4 +1,7 @@
-# 🔁 **Perception in Reflection**  
+<div align="center">
+  <img src="assets/images/0-logo.png" alt="RePer Logo" width="60" style="vertical-align: middle; margin-right: 20px;">
+  <h1 style="display: inline-block; vertical-align: middle; margin: 0;"> <strong><span style="color: #2b968d;">Per</span>ception in <span style="color: #2b968d;">Re</span>flection</strong></h1>
+</div>
 
 <!-- <p align="center">
   <img src="static/images/Fig1.png" alt="RePer Teaser" width="70%">
@@ -10,8 +13,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2504.07165"><img src="https://img.shields.io/badge/arXiv-2504.07165-b31b1b.svg" alt="arXiv"></a>
-  <a href="https://weiyana.github.io/reper/"><img src="https://img.shields.io/badge/Website-reper-3776ab.svg" alt="Project Page"></a>
-  <a href="https://github.com/yourname/reper"><img src="https://img.shields.io/badge/Code-RePer-4b8bbe.svg" alt="Code"></a>
+  <a href="https://weiyana.github.io/Perception-in-Reflection/"><img src="https://img.shields.io/badge/Website-RePer-3776ab.svg" alt="Project Page"></a>
   <img src="https://img.shields.io/badge/Model-ComingSoon-yellow.svg" alt="Model">
   <img src="https://img.shields.io/badge/Dataset-ComingSoon-orange.svg" alt="Dataset">
 </p>
@@ -26,37 +28,71 @@
 
 ---
 
-## ✨ Highlights
+## 📋 TODO
+
+- [ ] 🤗 Release RePer checkpoints
+- [ ] 🪚 Release Visual Reflection Dataset
+- [ ] 🎩 Release code for reflective Unlikelihood Training
+- [ ] 👀 Release GAPE evaluation for detailed, accurate image caption with no hallucinations
+
+---
+
+## 🙌 Highlights
 
 - 👁️ RePer progressively shifts image attention toward human-aligned regions through iterative reflection, resulting in perceptual patterns that more closely mirror human focus.
 - 🔁 Reflective Perceptual Learning serves as a free-form preference optimization that unifies various preference learning paradigms (DPO and LiPO), while enabling fine-grained supervision through explicit feedback signals.
 - 🌇 RePer is an accurate and informative image captioner that significantly reduces hallucinations.
 
-<!-- ---
-
-## 🖼️ Overview
-
+---
+## ✨ Key Insights
+**RePer Progressively Aligns Human Attention**
+- The model accurately shifts its attention emphasis towards the correct image tokens, rather than over-focusing on a few insignificant ones.
 <div align="center">
-  <img src="static/images/Fig1.png" width="90%" />
-  <p><i>Figure 1. RePer uses a dual-model loop to iteratively refine perception and reduce hallucinations.</i></p>
-</div> -->
+  <img src="assets/images/5-attention.png" width="90%" />
+</div> 
 
-<!-- ---
-
-## 📊 Benchmark Results
-
-
+**RPL is a Free-Form Preference Optimization**
+- **Rewards increasing linearly from  rounds 1 to T.** The model mainly penalizes poor samples (more unlikelihood) in the initial rounds, while it gradually shifts to rewarding good samples (more likelihood) in later rounds. 
+- This helps the model avoid overfitting to poor initial samples and, importantly, allows it to **progressively learn to distinguish between good and bad samples**.
+<div align="center">
+  <img src="assets/images/6-latex.png" width="90%" />
+</div> 
 
 ---
 
-## 📂 Resources
+## 📊 Visual Reflection Dataset
+Visual Reflection Dataset Construction Pipeline and one data sample
+<div align="center">
+  <img src="assets/images/2-dataset.png" width="90%" />
+</div> 
+<div align="center">
+  <img src="assets/images/3-data-case.png" width="90%" />
+</div> 
 
-- 📄 [Paper on arXiv](https://arxiv.org/abs/2504.07165)
-- 🌐 [Project Page](https://weiyana.github.io/Perception-in-Reflection/)
-- 💾 [Dataset - Coming Soon](#)
-- 🧠 [Model Checkpoints - Coming Soon](#)
 
---- -->
+## 🆚 Benchmark Results
+- A new benchmark called GAPE for human-aligned image captioning
+- Superior performance across various benchmarks including image understanding, hallucination detection and detailed image caption!
+
+<div align="center">
+  <img src="assets/images/7-perf.png" width="95%" />
+</div> 
+
+## 🌄 T2I Evaluation for Generated Captions
+- Using DALLE-3 as a text-to-image model to reconstruct images using generated captions. (left)
+- More evaluations from T2I model and human demonstrates RePers’ high-quality captions. (right)
+
+<div align="center">
+  <img src="assets/images/8-t2i.png" width="95%" />
+</div> 
+
+## 🧐 Further Analysis
+
+
+<div align="center">
+  <img src="assets/images/9-analysis.png" width="95%" />
+</div> 
+
 
 ## 🧾 BibTeX
 
