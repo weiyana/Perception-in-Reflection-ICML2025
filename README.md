@@ -16,22 +16,21 @@
   <img src="https://img.shields.io/badge/Dataset-ComingSoon-orange.svg" alt="Dataset">
 </p>
 
----
 
-## ✨ Highlights
-
-We introduce **RePer**, a reflective vision-language model that corrects its own hallucinations by:
-
-- 🔁 Alternating between a **Policy** and a **Critic** model.
-- 💬 Learning to revise generations, guided by **Reflective Perceptual Learning (RPL)**.
-- 👁️ Iteratively improving alignment between model attention and human focus.
-- 🚀 Achieving state-of-the-art performance on hallucination benchmarks like **HallusionBench**, **GAIVE**, and detailed captioning datasets.
 
 ---
 
 ## 🧠 Abstract
 
-> We propose Reflective Perception (**RePer**), a dual-model architecture for vision-language models (LVLMs) that iteratively improves perception through a policy-critic loop. Using Reflective Perceptual Learning (**RPL**), RePer identifies and corrects hallucinated tokens during generation. Our framework demonstrates superior performance in caption detail, perception accuracy, and hallucination resistance—offering a robust paradigm for multimodal agents requiring complex visual reasoning.
+> We present a perception in reflection paradigm designed to transcend the limitations of current large vision-language models (LVLMs), which are expected yet often fail to achieve perfect perception initially. Specifically, we propose Reflective Perception (RePer), a dual-model reflection mechanism that systematically alternates between policy and critic models, enables iterative refinement of visual perception. This framework is powered by Reflective Perceptual Learning (RPL), which reinforces intrinsic reflective capabilities through a methodically constructed visual reflection dataset and reflective unlikelihood training. Comprehensive experimental evaluation demonstrates RePer’s quantifiable improvements in image understanding, captioning precision, and hallucination reduction. Notably, RePer achieves strong alignment between model attention patterns and human visual focus, while RPL optimizes fine-grained and free-form preference alignment. These advancements establish perception in reflection as a robust paradigm for future multimodal agents, particularly in tasks requiring complex reasoning and multi-step manipulation.
+
+---
+
+## ✨ Highlights
+
+- 👁️ RePer progressively shifts image attention toward human-aligned regions through iterative reflection, resulting in perceptual patterns that more closely mirror human focus.
+- 🔁 Reflective Perceptual Learning serves as a free-form preference optimization that unifies various preference learning paradigms (DPO and LiPO), while enabling fine-grained supervision through explicit feedback signals.
+- 🌇 RePer is an accurate and informative image captioner that significantly reduces hallucinations.
 
 <!-- ---
 
@@ -46,18 +45,14 @@ We introduce **RePer**, a reflective vision-language model that corrects its own
 
 ## 📊 Benchmark Results
 
-| Benchmark        | Metric        | Baseline | RePer |
-|------------------|---------------|----------|--------|
-| DetailCaps       | CAPTURE ↑     | 78.4     | **85.2** |
-| HallusionBench   | Accuracy ↑    | 25.61%   | **31.28%** |
-| GAIVE (GAPE)     | Total Score ↑ | 77.37    | **82.54** |
+
 
 ---
 
 ## 📂 Resources
 
 - 📄 [Paper on arXiv](https://arxiv.org/abs/2504.07165)
-- 🌐 [Project Page](https://yourdomain.com/reper)
+- 🌐 [Project Page](https://weiyana.github.io/Perception-in-Reflection/)
 - 💾 [Dataset - Coming Soon](#)
 - 🧠 [Model Checkpoints - Coming Soon](#)
 
