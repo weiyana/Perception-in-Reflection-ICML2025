@@ -13,6 +13,7 @@
 
 <p align="center">
   <a href="https://arxiv.org/abs/2504.07165"><img src="https://img.shields.io/badge/arXiv-2504.07165-b31b1b.svg" alt="arXiv"></a>
+  <a href="https://icml.cc/virtual/2025/poster/44894"><img src="https://img.shields.io/badge/ICML-2025-ff6b6b.svg" alt="ICML 2025"></a>
   <a href="https://weiyana.github.io/Perception-in-Reflection/"><img src="https://img.shields.io/badge/Website-RePer-3776ab.svg" alt="Project Page"></a>
   <img src="https://img.shields.io/badge/Model-ComingSoon-yellow.svg" alt="Model">
   <img src="https://img.shields.io/badge/Dataset-ComingSoon-orange.svg" alt="Dataset">
